@@ -4,9 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
     <!--CSS -->
     <link rel="stylesheet" href="assets/css/style.css">
+    
     <title>You</title>
 </head>
 <body>
@@ -19,21 +21,129 @@
         </ul>
     </div>
     <main class="main">
+
+        <section class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="card swiper-slide">
+                    <div class="card__image">
+                        <img src="assets/img/sul.jpg" alt="card image">
+                    </div>
+                    <div class="card__content">
+                        <div class="card__title">
+                                Students
+                        </div>
+                        <span class="card__name">
+                            Ursule DABO
+                        </span>
+                        <p class="card__text">Hi, i'm a developer frontend and backend, Webdesigner too</p> 
+                    <button class="card__btn">View more</button>                  
+                    </div>
+
+                </div>
+                <div class="card swiper-slide">
+                    <div class="card__image">
+                        <img src="assets/img/sul.jpg" alt="card image">
+                    </div>
+                    <div class="card__content">
+                        <div class="card__title">
+                                Students
+                        </div>
+                        <span class="card__name">
+                            Ursule DABO
+                        </span>
+                        <p class="card__text">Hi, i'm a developer frontend and backend, Webdesigner too</p> 
+                    <button class="card__btn">View more</button>                  
+                    </div>
+
+                </div>
+                <div class="card swiper-slide">
+                    <div class="card__image">
+                        <img src="assets/img/sul.jpg" alt="card image">
+                    </div>
+                    <div class="card__content">
+                        <div class="card__title">
+                                Students
+                        </div>
+                        <span class="card__name">
+                            Ursule DABO
+                        </span>
+                        <p class="card__text">Hi, i'm a developer frontend and backend, Webdesigner too</p> 
+                    <button class="card__btn">View more</button>                  
+                    </div>
+
+                </div>
+                <div class="card swiper-slide">
+                    <div class="card__image">
+                        <img src="assets/img/sul.jpg" alt="card image">
+                    </div>
+                    <div class="card__content">
+                        <div class="card__title">
+                                Students
+                        </div>
+                        <span class="card__name">
+                            Ursule DABO
+                        </span>
+                        <p class="card__text">Hi, i'm a developer frontend and backend, Webdesigner too</p> 
+                    <button class="card__btn">View more</button>                  
+                    </div>
+
+                </div>
+                <div class="card swiper-slide">
+                    <div class="card__image">
+                        <img src="assets/img/sul.jpg" alt="card image">
+                    </div>
+                    <div class="card__content">
+                        <div class="card__title">
+                                Students
+                        </div>
+                        <span class="card__name">
+                            Ursule DABO
+                        </span>
+                        <p class="card__text">Hi, i'm a developer frontend and backend, Webdesigner too</p> 
+                    <button class="card__btn">View more</button>                  
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+         <!-- Swiper JS -->
+        <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+        <script>
+            var swiper = new Swiper(".mySwiper", {
+              effect: "coverflow",
+              grabCursor: true,
+              centeredSlides: true,
+              slidesPerView: "auto",
+              coverflowEffect: {
+                rotate: 0,
+                stretch: 0,
+                depth: 300,
+                modifier: 1,
+                slideShadows: false,
+              },
+              pagination: {
+                el: ".swiper-pagination",
+              },
+            });
+          </script>
+
         <!-- Home -->
-        <section class="home" id="home">
-            <div class="home__container container grid">
-                <div class="selections">
-                    <input type="radio" name="slider" id="s1">
+         <!--<section class="home" id="home">
+           <div class="home__container  grid">
+                <div class="container>
+                    <input type="radio" name="slider" id="s1" >
                     <input type="radio" name="slider" id="s2">
-                    <input type="radio" name="slider" id="s3">
+                    <input type="radio" name="slider" id="s3"checked>
                     <input type="radio" name="slider" id="s4">
                     <input type="radio" name="slider" id="s5">
                 </div>
                 <div class="cards">
-                    <label for="s1" id="slider1">
+                    <label for="s1" id="slide1">
                         <div class="card">
                             <div class="image">
-                                <img src="assets/img/sul.png" alt="Ursule">
+                                <img src="assets/img/sul.jpg" alt="Ursule">
                                 <div class="dots">
                                     <div></div>
                                     <div></div>
@@ -41,16 +151,33 @@
                                 </div>
                             </div>
                             <div class="infos">
-                                <span class="sul"></span>
+                                <span class="sul">Ursule DABO</span>
+                                <span class="name">Un developpeur fullstack JS, Web designer, aussi</span>
+                                <a href="/Sul" class="details">details</a>
+                            </div>
+                        </div>
+                    </label>
+                    <label for="s2" id="slide2">
+                        <div class="card">
+                            <div class="image">
+                                <img src="assets/img/sul.jpg" alt="Ursule">
+                                <div class="dots">
+                                    <div></div>
+                                    <div></div>
+                                    <div></div>
+                                </div>
+                            </div>
+                            <div class="infos">
+                                <span class="sul">Lucie</span>
                                 <span class="lorem">Un developpeur fullstack JS, Web designer, Etudiante aussi</span>
                                 <a href="/Sul" class="details">details</a>
                             </div>
                         </div>
                     </label>
-                    <label for="s2" id="slider2">
+                    <label for="s3" id="slide3">
                         <div class="card">
                             <div class="image">
-                                <img src="assets/img/sul.png" alt="Ursule">
+                                <img src="assets/img/sul.jpg" alt="Ursule">
                                 <div class="dots">
                                     <div></div>
                                     <div></div>
@@ -58,16 +185,16 @@
                                 </div>
                             </div>
                             <div class="infos">
-                                <span class="sul"></span>
+                                <span class="sul">Fana</span>
                                 <span class="lorem">Un developpeur fullstack JS, Web designer, Etudiante aussi</span>
                                 <a href="/Sul" class="details">details</a>
                             </div>
                         </div>
                     </label>
-                    <label for="s3" id="slider3">
+                    <label for="s4" id="slide4">
                         <div class="card">
                             <div class="image">
-                                <img src="assets/img/sul.png" alt="Ursule">
+                                <img src="assets/img/sul.jpg" alt="Ursule">
                                 <div class="dots">
                                     <div></div>
                                     <div></div>
@@ -75,16 +202,16 @@
                                 </div>
                             </div>
                             <div class="infos">
-                                <span class="sul"></span>
+                                <span class="sul">Nousra</span>
                                 <span class="lorem">Un developpeur fullstack JS, Web designer, Etudiante aussi</span>
                                 <a href="/Sul" class="details">details</a>
                             </div>
                         </div>
                     </label>
-                    <label for="s4" id="slider4">
+                    <label for="s5" id="slide5">
                         <div class="card">
                             <div class="image">
-                                <img src="assets/img/sul.png" alt="Ursule">
+                                <img src="assets/img/sul.jpg" alt="Ursule">
                                 <div class="dots">
                                     <div></div>
                                     <div></div>
@@ -92,24 +219,7 @@
                                 </div>
                             </div>
                             <div class="infos">
-                                <span class="sul"></span>
-                                <span class="lorem">Un developpeur fullstack JS, Web designer, Etudiante aussi</span>
-                                <a href="/Sul" class="details">details</a>
-                            </div>
-                        </div>
-                    </label>
-                    <label for="s5" id="slider5">
-                        <div class="card">
-                            <div class="image">
-                                <img src="assets/img/sul.png" alt="Ursule">
-                                <div class="dots">
-                                    <div></div>
-                                    <div></div>
-                                    <div></div>
-                                </div>
-                            </div>
-                            <div class="infos">
-                                <span class="sul"></span>
+                                <span class="sul">Susule DABO</span>
                                 <span class="lorem">Un developpeur fullstack JS, Web designer, Etudiante aussi</span>
                                 <a href="/Sul" class="details">details</a>
                             </div>
@@ -125,8 +235,8 @@
                         More about us
                     </a>
                 </div>
-            </div>
-        </section>
+            
+        </section>-->
     </main>
     <script src="assets/js/main.js"></script>
 </body>
