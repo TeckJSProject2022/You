@@ -116,7 +116,7 @@ input{
 }
 .logo{
    color: white; 
-   font-size: 30px;
+   font-size: 50px;
 }
 .logo span{
     color: rgb(78, 159, 61);
@@ -167,13 +167,19 @@ input{
     border-radius: 50%;
     border: 5px solid var(--hue-color);
     padding: 3px;
-    margin-bottom: 2EM;
+    margin-bottom: 2em;
+    transition: all .7s;
 }
 .card__image img{
     width: 100%;
     height: 100%;
     border-radius: 50%;
     object-fit: cover;
+    transition: all .7s;
+}
+.card__image img:hover,
+.card__image:hover{
+    transform: scale(1.09);
 }
 .card__content{
     display: flex;
@@ -205,6 +211,10 @@ input{
     border-radius: .5em;
     margin-top: .5em;
     cursor: pointer;
+    transition: all .7s;
+}
+.card__btn:hover{
+    transform: scale(1.09);
 }
 
 /*===========DESCRIPTION==========*/
