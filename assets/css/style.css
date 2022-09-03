@@ -133,13 +133,14 @@ input{
     font-size: 20px;
 }
 
+
 /*=======SLIDER=======*/
 .swiper{
     width: 100%;
 
 }
 .swiper-wrapper{
-    width: 100%;
+    width: 500%;
     height: 35em;
     display: flex;
     align-items: center; 
@@ -204,6 +205,23 @@ input{
     border-radius: .5em;
     margin-top: .5em;
     cursor: pointer;
+}
+
+/*===========DESCRIPTION==========*/
+span{
+    color: rgb(78, 159, 61);
+}
+.us{
+    font-size: 80px;
+}
+.description{
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
 }
 
 
