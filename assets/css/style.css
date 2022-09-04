@@ -1,143 +1,14 @@
-/*======== Google Fonts =========*/
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300&family=Poppins:wght@300;400;500;600&display=swap');
 
-/*=======VARIABLES CSS========*/
-:root{
-    /*======Colors=====*/
-    --hue-color:rgb(78, 159, 61);;
-
-    /*======HSL COLOR MODE=====*/
-    --skin-color:hsl(115, 66%, 10%);
-    --title-color:hsl((var(--hue-color)), 8%, 95%);
-    --text-color:hsl((var(--hue-color)), 8%, 85%);
-    --body-color:hsl((var(--hue-color)), 19%, 5%);
-    --box-color:hsl((var(--hue-color)), 14%, 10%);
-    --scroll-bar-color:hsl((var(--hue-color)), 12%, 38%);
-    --sroll-thumb-color:hsl((var(--hue-color)), 12%, 26%);
-
-    /*======FONT AND TYPOGRAPHY=====*/
-     --body-font:'Poppins', sans-serif;
-
-    /*======Z INDEX=====*/
-      --z-fixed:10;
-      --z-modal:100;
-
-    /*======.5rem = 8px , 1rem = 16px, 1.5rem = 24px,.... =====*/
-    --biggest-font-size:3rem;
-    --h1-font-size:2.25rem;
-    --h2-font-size:1.5rem;
-    --h3-font-size:1.25rem;
-    --normal-font-size:1rem;
-    --small-font-size:.875rem;
-    --smaller-font-size:.813rem;
-
-    /*======FONT WEIGHT=====*/
-    --font-medium:500;
-    --font-bold:600;
-
-    /*======MARGENES BOTTOM=====*/
-    --mb-0-25:.25rem;
-    --mb-0-5:.5rem;
-    --mb-0-75:.75rem;
-    --mb-1:.1rem;
-    --mb-1-5:1.5rem;
-    --mb-2:.2rem;
-    --mb-2-5:2.5rem;
-    --mb-3:3rem;
-
-    
-
-
-
-}
-
-
-/*======BASE=====*/
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-html{
-    scroll-behavior: smooth;
-}
-main{
-    position: relative;
-}
-body,
-button,
-input{
-    font-family: var(--body-font);
-    font-size: var(--normal-font-size);
-}
-
-body{
-    background-color: var(--body-color);
-    color: var(--text-color);
-    align-items: center;
-    height: 100vh;
-    align-items: center;
-    overflow-x: hidden;
-    justify-content: center;
-}
-h1, h2, h3{
-    color: var(--title-color);
-    font-weight: var(--font-bold);
-}
-ul{
-    list-style: none;
-}
-a{
-    text-decoration: none;
-}
-button{
-    cursor: pointer;
-}
-input{
-    display: none;
-}
-
-button,
-input{
-    border: none;
-    outline: none;
-}
 /*==========CLASSES AND ID==========*/
 
-/*=======HEADER=======*/
-.menu_bar{
-    background-color: rgb(16, 7, 32);
-    height: 80px;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0 10%;
+.menu_bar ul li a:hover{
+    color:rgb(78, 159, 61) ;
 }
-.logo{
-   color: white; 
-   font-size: 50px;
-}
-.logo span{
-    color: rgb(78, 159, 61);
-}
-.menu_bar ul{
-    list-style: none;
-    display: flex;
-}
-.menu_bar ul li{
-    padding: 10px 30px ;
-}
-.menu_bar ul li a{
-    color: white;
-    font-size: 20px;
-}
-
 
 /*=======SLIDER=======*/
 .swiper{
     width: 100%;
-
 }
 .swiper-wrapper{
     width: 500%;
@@ -233,184 +104,41 @@ span{
     text-align: center;
 
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*
-.container{
-    width: 100%;
-    height: 100%;
-    max-width: 600px;
-    max-height: 600px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transform-style: preserve-3d;
-    flex-direction: column;
-    margin-bottom: 100px;
-
-}
-.cards{
-    position: relative;
-    height: 200px;
-    width: 430px;
-    margin-top: 30px;
-    margin-bottom: 20px;
-    perspective: 1000px;
-    transform-style: preserve-3d;
-}
-.cards label{
-    position: absolute;
-    width: 430px;
-    left: 150%;
-    right: 5%;
-    margin: auto;
-    cursor: pointer;
-    transition: transform 0.55s ease;
-}
-.cards .card{
-    position: relative;
-    height: 100%;
-    background-color: rgb(16, 7, 32);
-    border-radius: 10px;
-    padding: 30px 35px;
-
-}
-.cards .image{
-    display: flex;
-    justify-content: space-between;
-
-}
-.cards .image img{
-    border-radius: 5px;
-    box-shadow: 15px 15px 40px rgba(0, 0, 0, 50%);
-    margin-top: 23px;
-    width: 90%;
-    height: 300px;
-    object-fit: cover;
-    transition: all .7s;
-}
-.cards .image img:hover{
-    transform: scale(1.05);
-}
-.cards .infos{
-    display: block;
-    text-align: end;
-    padding-top: 60px;
-
-}
-.card .infos span{
-    display: block;
-}
-.infos .sul{
-    font-size: 30px;
-    color: rgb(78, 159, 61);
-    letter-spacing: 8px;
-    margin-bottom: 20px;
-    padding-left: 25%;
-    transition: all .6s ease;
-
-
-}
-.card .lorem{
-    font-size: 15.5px;
+p{
     color: white;
-    letter-spacing: 3px;
-
-}
-.card .details{
-    width: 100%;
-    height: 60px;
-    margin: 35px auto;
-    border-radius: 5px;
-    display: flex;
-    align-items: center;
-    background-color: rgb(78, 159, 61);
-    justify-content: center;
-    color: white;
-    font-size: 25px;
-    letter-spacing: 10px;
-    font-weight: 700;
-    transform: all .10s ease;
-
-}
-.card .details:hover{
-    transform: scale(1.09);
 }
 
-#s1:checked~.cards #slide4,
-#s2:checked~.cards #slide5,
-#s3:checked~.cards #slide1,
-#s4:checked~.cards #slide2,
-#s5:checked~.cards #slide3{
-    box-shadow: 0 15px 30px rgba(0, 0, 0, 45%);
-    transform: translate3d(-70%,0,-220px);
-}
-#s1:checked~.cards #slide5,
-#s2:checked~.cards #slide1,
-#s3:checked~.cards #slide2,
-#s4:checked~.cards #slide3,
-#s5:checked~.cards #slide4{
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 45%);
-    transform: translate3d(35%,0,-120px);
-}
-#s1:checked~.cards #slide1,
-#s2:checked~.cards #slide2,
-#s3:checked~.cards #slide3,
-#s4:checked~.cards #slide4,
-#s5:checked~.cards #slide5{
-    box-shadow: 0 25px 50px rgba(0, 0, 0, 50%);
-    transform: translate3d(0,0,0);
-}
-#s1:checked~.cards #slide2,
-#s2:checked~.cards #slide3,
-#s3:checked~.cards #slide4,
-#s4:checked~.cards #slide5,
-#s5:checked~.cards #slide1{
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 45%);
-    transform: translate3d(-35%,0,-120px);
-}
-#s1:checked~.cards #slide3,
-#s2:checked~.cards #slide4,
-#s3:checked~.cards #slide5,
-#s4:checked~.cards #slide1,
-#s5:checked~.cards #slide2{
-    box-shadow: 0 15px 30px rgba(0, 0, 0, 45%);
-    transform: translate3d(-70%,0,-220px);
-}*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

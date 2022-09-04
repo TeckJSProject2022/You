@@ -14,26 +14,31 @@ const view5 = _get("view_btn5");
 
 view1.addEventListener("click",(e)=>{
     e.preventDefault();
+    window.location.href="sul.html"
     console.log(sul.innerHTML);
 })
 
 view2.addEventListener("click",(e)=>{
     e.preventDefault();
+    window.location.href="sul.html"
     console.log(fana.innerHTML);
 })
 
 view3.addEventListener("click",(e)=>{
     e.preventDefault();
+    window.location.href="sul.html"
     console.log(lucie.innerHTML);
 })
 
 view4.addEventListener("click",(e)=>{
     e.preventDefault();
+    window.location.href="sul.html"
     console.log(nousra.innerHTML);
 })
 
 view5.addEventListener("click",(e)=>{
     e.preventDefault();
+    window.location.href="sul.html"
     console.log(serge.innerHTML);
 
 })
