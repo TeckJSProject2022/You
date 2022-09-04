@@ -1,10 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300&family=Poppins:wght@300;400;500;600&display=swap');
 
 /*==========CLASSES AND ID==========*/
-body{
-    color: black;
-}
 
+
+body{
+    background-image: url(/assets/img/bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+}
 .menu_bar ul li a:hover{
     color:rgb(78, 159, 61) ;
 }
@@ -26,7 +30,7 @@ body{
 .card{
     width: 20em;
     height: 90%;
-    background-color: rgb(255, 255, 255);
+    background-color: rgba(255, 255, 255, 0.918);
     color: black;
     border-radius: 2em;
     box-shadow: 0 0 2em rgba(0, 0, 0, .2);

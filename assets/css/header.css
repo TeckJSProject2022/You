@@ -62,9 +62,15 @@ body,
 button,
 input{
     font-family: var(--body-font);
-    font-size: var(--normal-font-size);
+    
 }
-
+body{
+    background-image: url(/assets/img/bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 800vh;
+    width: 100%;
+}
 body{
     background-color:rgb(5, 2, 10);
     font-family: var(bo);
